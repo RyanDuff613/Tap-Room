@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function Keg(props){
 
   function sellPint(){
-    
+    // props.sell(props.id)
   }
   
   return (

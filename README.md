@@ -12,7 +12,11 @@ This is a web application intended for use in a tap room. It allows a manager or
 
 
 ## Setup/Installation Requirements
-This project will run on any current web browser, Google Chrome is recommended. Users will need to clone the project from my GitHub repository at https://github.com/RyanDuff613/Tap-Room.git . Once cloning is complete and the project files are available on a user's local computer, the user will be required to install all dependencies via NPM's command line interface. Enter project folder via command line and run $ npm install. When installation is complete run $ npm run build. NPM will create a folder named dist. Using Chrome open the index.html file located in the Dist folder to view the project.
+This project will run on any current web browser, Google Chrome is recommended. 
+* Users will need to clone the project from my GitHub repository at https://github.com/RyanDuff613/Tap-Room.git . Once cloning is complete and the project files are available on a user's local computer, the user will be required to install all dependencies via NPM's command line interface. 
+* Enter project folder via command line and run $ npm install. 
+* When installation is complete run $ npm run build. NPM will create a folder named dist. 
+* Using Chrome, open the index.html file located in the Dist folder to view the project.
 
 
 ## Specifications
