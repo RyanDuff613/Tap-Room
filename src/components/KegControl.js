@@ -7,8 +7,9 @@ class KegControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formVisible: false
-    }
+      formVisible: false,
+      masterKegList: []
+    };
   }
 
   handleClick = () => {
@@ -17,15 +18,21 @@ class KegControl extends React.Component {
     }));
   }
 
+  handleAddingNewKeg = (newKeg) => {
+    const newMasterKegList = this.state.masterKegList.concat(newKeg);
+    this.setState({masterKegList: newMasterKegList,
+                    formVisible: false });
+  }
+
   render(){
     let currentlyVisibleState = null;
     let buttonText =null;
     if(this.state.formVisible) {
-      currentlyVisibleState = <NewKegForm />
-      buttonText = "Return to Keg List"
+      currentlyVisibleState = <NewKegForm onNewKegCreation={this.handleAddingNewKeg} />;
+      buttonText = "Return to Keg List";
     } else {
-      currentlyVisibleState = <KegList />
-      buttonText = "Add Keg to Inventory"
+      currentlyVisibleState = <KegList kegList={this.state.masterKegList}/>;
+      buttonText = "Add Keg to Inventory";
     }
     return (
       <React.Fragment>
