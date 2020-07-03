@@ -11,6 +11,7 @@ function NewKegForm(props){
                             price: event.target.price.value,
                             alcoholContent: event.target.alcoholContent.value,
                             quantity: 124,
+                            description: event.target.description.value,
                             id: v4() });
   }
 
@@ -21,18 +22,29 @@ function NewKegForm(props){
           type='text'
           name='brand'
           placeholder='Brand Name' />
+        <br />
         <input
           type='text'
           name='name'
           placeholder='Beer Name' />
+        <br />
         <input
           type='text'
           name='price'
           placeholder='Price Per Pint' />
+        <br />
         <input
           type='text'
           name='alcoholContent'
           placeholder='Alcohol Content' />
+        <br />
+        <textarea 
+          rows="5"
+          columns="100"
+          type="text"
+          name="description"
+          placeholder="Description" />
+        <br />
         <button type='submit'>Add Keg to Inventory</button>
       </form>
     </React.Fragment>

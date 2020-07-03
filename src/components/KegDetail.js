@@ -13,6 +13,8 @@ function KegDetail(props){
       <h5>Alcohol Content: {keg.alcoholContent}</h5>
       <h5>Pints Remaining: { keg.quantity }</h5>
       <hr/>
+      <h5>Description:</h5>
+      <p>{ keg.description }</p>
     </React.Fragment>
   );
 }
