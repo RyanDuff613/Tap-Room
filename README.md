@@ -22,7 +22,7 @@ This project will run on any current web browser, Google Chrome is recommended.
 ## Specifications
 
 | Behavior       | Input         | Output  |
-| ------------- |:-------------:| -----:|
+| :------------- |:--------:| :-----------|
 |Navigate to site, see list of available beers.|localhost:3000|Homepage with list of available beers|
 |Click on keg to see detail page about the beer|Click "Widmer Hef"|Detail page for Widmer Hef|
 |Click a button to add a new keg|Click "Add New Keg"|Form for adding new keg|
