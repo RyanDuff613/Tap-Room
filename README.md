@@ -1,68 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tap Room
 
-## Available Scripts
+#### Epicodus: React: Independent Project 1
 
-In the project directory, you can run:
+#### by: Ryan Duff 
 
-### `npm start`
+## Description
+This is a web application intended for use in a tap room. It allows a manager or owner to keep track of the amount of beer in any given keg they might have in stock, decrementing as pints are sold and giving alerts when the keg is nearly empty and completely empty. The app is a front-end application built entirely on HTML, CSS, Javascript and React.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Application Diagram
+![](./src/diagram.jpg)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
+## Setup/Installation Requirements
+This project will run on any current web browser, Google Chrome is recommended. Users will need to clone the project from my GitHub repository at https://github.com/RyanDuff613/Tap-Room.git . Once cloning is complete and the project files are available on a user's local computer, the user will be required to install all dependencies via NPM's command line interface. Enter project folder via command line and run $ npm install. When installation is complete run $ npm run build. NPM will create a folder named dist. Using Chrome open the index.html file located in the Dist folder to view the project.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Specifications
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Behavior       | Input         | Output  |
+| ------------- |:-------------:| -----:|
+|Navigate to site, see list of available beers.|localhost:3000|Homepage with list of available beers|
+|Click on keg to see detail page about the beer|Click "Widmer Hef"|Detail page for Widmer Hef|
+|Click a button to add a new keg|Click "Add New Keg"|Form for adding new keg|
+|Click a button to decrement total number of pints left in keg when a sale is made.|Click "Pint Sold"|Total pints left in keg decreased by one unit|
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## User Stories Employed to Determine Behavior Driven Development Strategy
+* As a user, I want the option to edit a keg's properties after entering them just in case I make a mistake.
+* As a user, I want to be able to delete a keg.
+* As a user, I want a keg to update to say "Out of Stock" once it's empty.
+* As a user, I want kegs with less than 10 pints to include a message that says "Almost Empty" so I can try a pint before it's gone!
+* As a user, I want to have kegs prices to be color-coded for easy readability. This could be based on their price, the style of beer or kombucha, or the amount of pints left.
+* As a user, I want this application to be nicely styled. (Use stylesheets and CSS objects!)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
+* _HTML_
+* _CSS_
+* _Javascript_
+* _React_
+* _Markdown_
+* _git & gitHub_
 
-### `npm run eject`
+## Known Bugs
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**The MIT license**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Copyright (c) 2020 **Ryan Duff**
