@@ -19,4 +19,15 @@ function KegDetail(props){
     </React.Fragment>
   );
 }
+
+KegDetail.propTypes = {
+  brand: PropTypes.string,
+  name: PropTypes.string,
+  price: PropTypes.string,
+  alcoholContent: PropTypes.string,
+  quantity: PropTypes.number,
+  description: PropTypes.string,
+  id: PropTypes.string
+};
+
 export default KegDetail;
