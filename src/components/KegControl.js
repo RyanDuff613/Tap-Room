@@ -38,6 +38,12 @@ class KegControl extends React.Component {
     this.setState({selectedKeg: selectedKeg});
   }
 
+  handleSellingPint = (id) => {
+    const currentState = [...this.state.masterKegList];
+    currentState[id].quantity -=1;
+    this.setState({masterKegList: currentState});
+  }
+
   render(){
     let currentlyVisibleState = null;
     let buttonText =null;

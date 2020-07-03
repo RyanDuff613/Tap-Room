@@ -15,6 +15,7 @@ function KegDetail(props){
       <hr/>
       <h5>Description:</h5>
       <p>{ keg.description }</p>
+      <hr />
     </React.Fragment>
   );
 }
