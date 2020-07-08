@@ -16,7 +16,7 @@ function KegList(props){
             alcoholContent={keg.alcoholContent}
             id={keg.id}
             key={keg.id}/>
-          <button onClick={ props.onSellingPint }>Sell Pint</button>
+          <button onClick={() => props.onSellingPint(keg.id) }>Sell Pint</button>
           <hr />
         </div>
       )}
@@ -26,7 +26,8 @@ function KegList(props){
 
 KegList.propTypes = {
   kegList: PropTypes.array,
-  onKegSelection: PropTypes.func
+  onKegSelection: PropTypes.func,
+  onSellingPint: PropTypes.func
 };
 
 export default KegList;
