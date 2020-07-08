@@ -4,26 +4,22 @@ import PropTypes from "prop-types";
 
 function KegList(props){
 
-  function sellPint(){
-    // props.sell(props.id)
-  }
-  
   return (
     <React.Fragment>
-     {props.kegList.map((keg) =>
-      <div>
-        <Keg 
-          whenKegClicked = {props.onKegSelection}
-          brand={keg.brand}
-          name={keg.name}
-          price={keg.price}
-          alcoholContent={keg.alcoholContent}
-          id={keg.id}
-          key={keg.id}/>
-          <button onClick={ sellPint }>Sell Pint</button>
-        <hr />
-      </div>
-        )}
+      {props.kegList.map((keg) =>
+        <div>
+          <Keg 
+            whenKegClicked = {props.onKegSelection}
+            brand={keg.brand}
+            name={keg.name}
+            price={keg.price}
+            alcoholContent={keg.alcoholContent}
+            id={keg.id}
+            key={keg.id}/>
+          <button onClick={props.onSellingPint }>Sell Pint</button>
+          <hr />
+        </div>
+      )}
     </React.Fragment>
   );
 }
