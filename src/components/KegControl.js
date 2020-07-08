@@ -40,8 +40,10 @@ class KegControl extends React.Component {
 
   handleSellingPint = (id) => {
     const currentState = [...this.state.masterKegList];
-    currentState[id].quantity -=1;
+    console.log(currentState);
+    currentState[0].quantity -= 1;
     this.setState({masterKegList: currentState});
+    console.log(this.state.masterKegList);
   }
 
   render(){
@@ -58,7 +60,6 @@ class KegControl extends React.Component {
       currentlyVisibleState = <KegList kegList={this.state.masterKegList} onKegSelection={this.handleChangingSelectedKeg} onSellingPint={this.handleSellingPint}/>;
       buttonText = "Add Keg to Inventory";
     }
-
 
     
     return (

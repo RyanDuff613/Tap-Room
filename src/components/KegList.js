@@ -16,7 +16,7 @@ function KegList(props){
             alcoholContent={keg.alcoholContent}
             id={keg.id}
             key={keg.id}/>
-          <button onClick={props.onSellingPint }>Sell Pint</button>
+          <button onClick={ props.onSellingPint }>Sell Pint</button>
           <hr />
         </div>
       )}
