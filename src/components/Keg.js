@@ -16,7 +16,6 @@ function Keg(props){
         <h3>{ props.alcoholContent }</h3>
         <h3>{ props.quantity }</h3>
         <button onClick={ sellPint }>Sell Pint</button>
-        <hr />
       </div>
     </React.Fragment>
   );
