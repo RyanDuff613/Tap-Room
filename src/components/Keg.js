@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 function Keg(props){
 
-  
   return (
     <React.Fragment>
       <div onClick = {() => props.whenKegClicked(props.id)}>
