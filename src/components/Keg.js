@@ -3,9 +3,6 @@ import PropTypes from "prop-types";
 
 function Keg(props){
 
-  function sellPint(){
-    // props.sell(props.id)
-  }
   
   return (
     <React.Fragment>
@@ -15,7 +12,6 @@ function Keg(props){
         <h3>{ props.price }</h3>
         <h3>{ props.alcoholContent }</h3>
         <h3>{ props.quantity }</h3>
-        <button onClick={ sellPint }>Sell Pint</button>
       </div>
     </React.Fragment>
   );
